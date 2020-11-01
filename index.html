@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Endomondo exporter</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Endomondo exporter</h1>
+    <div id="main">
+        <form>
+            <span class="input-line">Login </span><input id="login"/><br/><br/>
+            <span class="input-line">Password </span><input type="password" id="password"/><br/><br/>
+        </form>
+        <button id="login_button">Login</button><br/><br/>
+        <button id="download_button" disabled>Download</button><div id="spinner" class="loader" style="display: none;"></div><br/><br/>
+
+        Downloaded: <span id="counter">0</span> workouts<br/>
+
+        <span id="error" style="display: none;">Error. Please try again.</span>
+    </div>
+</body>
+</html>
